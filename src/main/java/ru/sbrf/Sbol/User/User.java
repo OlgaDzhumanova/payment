@@ -8,12 +8,14 @@ public class User {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void getAccountNumber(){
+    public String getAccountNumber(){
         System.out.println("Укажите номер счета.");
         accountNumber = scanner.next();
+        return accountNumber;
     }
-    public void getUserNumber(){
+    public String getUserNumber(){
         System.out.println("Введите свой номер пользователя.");
         userNumber = scanner.next();
+        return userNumber;
     }
 }
