@@ -9,19 +9,21 @@ public class ApplicationUser {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void getPhoneNumber() {
+    public String getPhoneNumber() {
         System.out.println("Введите номер телефона.");
         phoneNumber = scanner.next();
+        return phoneNumber;
     }
 
-    public void getAmount() {
+    public float getAmount() {
         System.out.println("Введите сумму.");
         amount = scanner.nextFloat();
+        return amount;
     }
-    public void getCurrency(){
+
+    public String getCurrency() {
         System.out.println("Введите валюту.");
         String currency = scanner.next();
+        return currency;
     }
-
-
 }

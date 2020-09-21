@@ -9,10 +9,9 @@ public class CollectionAccountNumbers {
     User user = new User();
 
     public HashSet<String> getAccounts() {
-        if (getAccounts().contains(user) != true){
+        if (getAccounts().contains(user) != true ) {
             accounts.add(user.getAccountNumber());
         } else {
-            System.out.println("Такой элемент уже присутствует");
         }
         return accounts;
     }
